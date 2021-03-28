@@ -1,0 +1,29 @@
+# serverless.yml
+
+# Technical assessment by Steve Sutton (sutton@bcs.org) for Zinc Systems
+
+service: incident
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  region: eu-west-1
+
+functions:
+  getIncident:
+    handler: incident.get
+    events:
+      - http:
+          path: incident
+          method: get
+          cors: true
+  postIndicent:
+    handler: incident.post
+    events:
+      - http:
+          path: incident
+          method: post
+          cors: true
