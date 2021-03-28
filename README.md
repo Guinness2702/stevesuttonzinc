@@ -21,7 +21,7 @@
 
 ### Smoke test
 
-  The first you you run, you will need to make a note of the domain in the handlers, and update the DOMAIN environment variable in the go script, manually.
+  The first time you run, you will need to make a note of the domain in the handlers, and update the DOMAIN environment variable in the go script, manually.
 
   To run the basic moke test, execute the following command;
 
